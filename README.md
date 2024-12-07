@@ -21,33 +21,7 @@ npm create @pr4j3sh/frames@latest javascript mypkg
 npm run dev
 ```
 
-### Transitioning to `module`
-
-By default `javascript` package is of type `commonjs`
-
-- Add `"type":"module"` to `package.json`
-- Change contents of `esbuild.config.js` to
-
-```js
-import esbuild from "esbuild";
-
-try {
-  await esbuild.build({
-    entryPoints: ["index.js"],
-    bundle: true,
-    minify: true,
-    platform: "node",
-    packages: "external",
-    outfile: "dist/bundle.js",
-  });
-  console.log("Build successful!");
-} catch (err) {
-  console.error("Build failed:", err);
-  process.exit(1);
-}
-```
-
-- Use `imports` instead of `require`
+> By default `javascript` package is of type `commonjs`
 
 ## Reference
 
