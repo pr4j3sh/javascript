@@ -1,3 +1,9 @@
 #!/usr/bin/env node
 
-console.log("Hello, frames");
+const { greet } = require("./src/utils");
+
+console.log(greet("frames"));
+
+module.exports = {
+  greet,
+};

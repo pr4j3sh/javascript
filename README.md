@@ -1,6 +1,6 @@
 # Javascript NPM Package/Library
 
-This is a javascript npm package starter template.
+This is a javascript npm package commonjs module starter template. It produces both `cjs` and `esm` module builds.
 
 It provides both package scenarios:
 
@@ -21,7 +21,7 @@ npm create @pr4j3sh/frames@latest javascript mypkg
 npm run dev
 ```
 
-> By default `javascript` package is of type `commonjs`
+> By default `javascript` package is of type `cjs`. However, the final builds supports both, `cjs` and `esm`.
 
 ## Reference
 
