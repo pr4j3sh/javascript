@@ -2,14 +2,14 @@
   "name": "javascript",
   "description": "NPM package template.",
   "version": "1.0.0",
-  "main": "dist/bundle.cjs",
-  "module": "dist/bundle.mjs",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
   "exports": {
-    "require": "./dist/index.cjs",
-    "import": "./dist/index.mjs"
+    "require": "dist/index.cjs",
+    "import": "dist/index.mjs"
   },
   "bin": {
-    "javascript": "./dist/bundle.cjs"
+    "javascript": "dist/index.cjs"
   },
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
