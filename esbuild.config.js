@@ -23,8 +23,8 @@ try {
     format: "esm",
     bundle: true,
     minify: true,
-    platform: "browser",
-    target: ["esnext"],
+    platform: "node",
+    target: ["node14"],
   });
   console.log("ESM build successful");
 } catch (err) {
